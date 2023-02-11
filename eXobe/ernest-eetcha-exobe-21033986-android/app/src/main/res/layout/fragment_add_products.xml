@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    tools:context=".Fragments.add_products">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text=" Product Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_1sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/ProductTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1.6"
+                    android:background="@drawable/focus"
+                    android:elevation="@dimen/_1sdp"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Enter product name"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/hintSize" />
+
+                <Button
+                    android:id="@+id/search_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/login_button"
+                    android:text="search"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_1"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:padding="3dp"
+                    android:scaleType="center"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/add_image_one"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/add_image_border"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/red"
+                            android:textSize="35dp" />
+
+                        <ProgressBar
+                            android:id="@+id/progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:progressTint="@color/red"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/image_2"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:padding="3dp"
+                    android:scaleType="center"
+                    android:visibility="gone"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/add_image_two"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/add_image_border"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/red"
+                        android:textSize="35dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_3"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:padding="3dp"
+                    android:scaleType="center"
+                    android:visibility="gone"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/add_image_Three"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/add_image_border"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/red"
+                        android:textSize="35dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Enter Product Title"
+                android:singleLine="true"
+                android:textSize="@dimen/hintSize">
+
+                <Spinner
+                    android:id="@+id/productCategory_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Sub-Category"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Enter Product Title"
+                android:singleLine="true"
+                android:textSize="@dimen/hintSize">
+
+                <Spinner
+                    android:id="@+id/SubCategory_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="top"
+                android:hint="Enter description"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textSize="@dimen/hintSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Retail price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Enter product retail price"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="@dimen/hintSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Qty. Available"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Enter qty. available"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="@dimen/hintSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Discount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp"
+                android:fontFamily="@font/poppins_light"
+                android:hint="0%"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="@dimen/hintSize" />
+
+            <LinearLayout
+                android:id="@+id/addDealsField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/start_calender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Start Date &amp; Time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tv_startdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/focus"
+                        android:elevation="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins_light"
+                        android:hint="Date"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/hintSize" />
+
+                    <TextView
+                        android:id="@+id/start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/focus"
+                        android:elevation="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins_light"
+                        android:hint="Time"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/hintSize" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/end_calender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="End Date &amp; Time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tv_end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/focus"
+                        android:elevation="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins_light"
+                        android:hint="Date"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/hintSize" />
+
+                    <TextView
+                        android:id="@+id/end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/focus"
+                        android:elevation="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins_light"
+                        android:hint="Time"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/hintSize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/login_button"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/SUbTitle" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

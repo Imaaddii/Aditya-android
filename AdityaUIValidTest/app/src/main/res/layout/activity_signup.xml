@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/backclick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Sign Up"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please sign in to your account"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imageCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imagepicker"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/ic_baseline_account_circle_24" />
+
+            <ImageView
+                android:id="@+id/clickimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="103dp"
+                android:src="@drawable/camera" />
+
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:inputType="textCapWords|text"
+            android:maxLength="30"
+            android:textSize="14sp"
+            android:hint="Enter Full Name"/>
+        <TextView
+            android:id="@+id/tvnameerror"
+            android:layout_width="wrap_content"
+            android:textSize="9sp"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#F41010"
+            />
+
+
+        <EditText
+            android:id="@+id/etusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardview"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:textSize="14sp"
+            android:hint="Enter User Name"/>
+        <TextView
+            android:id="@+id/tvusernameerror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:padding="4dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#F41010"
+            />
+
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardview"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:maxLength="30"
+            android:layout_marginRight="15dp"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:hint="Enter Email ID"/>
+        <TextView
+            android:id="@+id/tvemailerror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="9sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#F41010"
+            />
+
+        <EditText
+            android:id="@+id/etnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardview"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:maxLength="10"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:hint="Enter Phone Number"/>
+        <TextView
+            android:id="@+id/tvnumbererror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:padding="4dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#F41010"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvpassworderror"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:passwordToggleEnabled="true"
+            app:hintAnimationEnabled="false"
+            android:layout_marginTop="5dp"
+            app:hintEnabled="false"
+            app:helperTextTextAppearance="@style/TextLabel"
+            app:counterMaxLength="16"
+            app:counterEnabled="true"
+            app:helperTextTextColor="#FF0000"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="16"
+                android:hint=" Enter Password"
+                android:inputType="textPassword"
+                android:background="@drawable/cardview"
+                android:padding="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvconfirmpassworderror"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:passwordToggleEnabled="true"
+            app:hintAnimationEnabled="false"
+            android:layout_marginTop="5dp"
+            app:hintEnabled="false"
+            app:helperTextTextAppearance="@style/TextLabel"
+            app:counterMaxLength="16"
+            app:counterEnabled="true"
+            app:helperTextTextColor="#FF0000"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etconfirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="16"
+                android:hint=" Confirm Password"
+                android:inputType="textPassword"
+                android:background="@drawable/cardview"
+                android:padding="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvbioerror"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="20dp"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
+            app:counterMaxLength="200"
+            app:helperTextTextAppearance="@style/TextLabel"
+            app:counterEnabled="true"
+            app:helperText=""
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etbio"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textSize="14sp"
+                android:hint=" Bio"
+                android:maxLength="200"
+                android:inputType="textCapWords|text|textMultiLine"
+                android:background="@drawable/cardview"
+                android:paddingBottom="40dp"
+                android:paddingHorizontal="15dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/etpassword"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Enter Password"-->
+        <!--            android:singleLine="true"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:padding="15dp"-->
+        <!--            android:maxLength="16"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:layout_marginHorizontal="20dp"-->
+        <!--            android:background="@drawable/cardview"/>-->
+
+        <!--            <TextView-->
+        <!--            android:id="@+id/tvpassworderror"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textSize="9sp"-->
+        <!--            android:padding="4dp"-->
+        <!--            android:layout_marginLeft="20dp"-->
+        <!--            android:textColor="#F41010"-->
+        <!--            />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/etconfirmpassword"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Confirm Password"-->
+        <!--            android:singleLine="true"-->
+        <!--            android:padding="15dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:maxLength="16"-->
+        <!--            android:layout_marginHorizontal="20dp"-->
+        <!--            android:background="@drawable/cardview"/>-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvconfirmpassworderror"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textSize="9sp"-->
+        <!--            android:padding="4dp"-->
+        <!--            android:layout_marginLeft="20dp"-->
+        <!--            android:textColor="#F41010"-->
+        <!--            />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/etbio"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="20dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:layout_marginRight="20dp"-->
+        <!--            android:background="@drawable/cardview"-->
+        <!--            android:maxLength="50"-->
+        <!--            android:hint="Bio"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:inputType="textMultiLine"-->
+        <!--            android:paddingBottom="90dp"-->
+        <!--            android:paddingTop="22dp"-->
+        <!--            android:paddingHorizontal="20dp" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvbioerror"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:maxLength="200"-->
+        <!--            android:layout_marginLeft="20dp"-->
+        <!--            android:textColor="#F41010"-->
+        <!--            />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:text="Social media link"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/twitter" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Twitter link"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="20dp"
+                android:background="@drawable/linkview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/fb" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Facebook link"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="20dp"
+                android:background="@drawable/linkview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ig" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Instagram link"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="20dp"
+                android:background="@drawable/linkview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/yt" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Youtube link"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="20dp"
+                android:background="@drawable/linkview"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:buttonTint="#FF5621"
+                android:layout_marginTop="11dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/i_agree_to_only_post_truthful_and_relevant_information_that_is_helpful_to_others_i_understand_violating_this_will_result_in_my_account_removal"/>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/checkboxError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#F41010"
+            />
+
+
+        <Button
+            android:id="@+id/submitbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button"
+            android:textColor="#ffffff"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="30dp"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textColor="#404040" />
+            <TextView
+                android:id="@+id/backtologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:lineSpacingExtra="6sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

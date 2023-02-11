@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.PaymentSuccessfulFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cross_img"
+            android:layout_gravity="end"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Successful"
+            android:textSize="@dimen/heading"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/work_sans_semi_bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"/>
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="45dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_telegram"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order placed"
+            android:textSize="@dimen/heading"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/work_sans_semi_bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your order #212423 was placed with success."
+                android:textColor="@color/DarkGray"
+                android:fontFamily="@font/work_sans_regular"
+                android:textSize="@dimen/sub_heading"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can see the status of the order at any time."
+                android:textColor="@color/DarkGray"
+                android:fontFamily="@font/work_sans_regular"
+                android:textSize="@dimen/sub_heading"/>
+
+        </LinearLayout>
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="See Order Status"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:fontFamily="@font/work_sans_semi_bold"-->
+<!--            android:background="@color/dark_green"/>-->
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Close"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:fontFamily="@font/work_sans_medium"-->
+<!--            android:background="#EAEAEA"/>-->
+
+        <LinearLayout
+            android:id="@+id/btnSeeOrderStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/dark_green_background_button">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_semi_bold"
+                android:gravity="center"
+                android:padding="17dp"
+                android:text="SEE ORDER STATUS"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="@color/light_grey"
+            android:background="@drawable/dark_green_background_button">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_medium"
+                android:gravity="center"
+                android:padding="17dp"
+                android:text="CLOSE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/button_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

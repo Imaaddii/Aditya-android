@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/group_22"
+    android:orientation="vertical"
+    tools:context=".editprofile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_menu_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:text="EDIT PROFILE"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPGRADE TO PREMIUM"
+        android:layout_marginTop="20dp"
+        android:textColor="#FF0000"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/button2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#737373"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Integer posuere erat a ante venenatis dapibus posuere velit alique"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:textColorHint="#FFFFFF"
+        android:hint="JASON SCOTT"
+        android:backgroundTint="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="55dp"
+        android:letterSpacing="0.1"
+        android:textSize="11.9sp"
+        android:textColor="#737373"
+        android:text="FULL NAME"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="55dp"
+        android:text="CHANGE PASSWORD"
+        android:background="@drawable/button"/>
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:text="CHANGE PIN"
+    android:background="@drawable/button"/>
+</LinearLayout>

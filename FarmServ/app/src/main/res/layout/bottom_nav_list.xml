@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:weightSum="4">
+
+    <RelativeLayout
+        android:id="@+id/home_tab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/selected_home"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selected_home" />
+
+                <ImageView
+                    android:id="@+id/unselected_home"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/unselected_home" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/home_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="#434343"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@color/dark_green"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_order_tab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/selected_order_history"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selected_my_order" />
+
+                <ImageView
+                    android:id="@+id/unselected_order_history"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/unselected_my_order" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/order_history_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#434343"
+
+                android:textSize="@dimen/_10sdp"
+                android:text="Order History" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/order_history_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:visibility="gone"
+            android:background="@color/dark_green"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_earning_tab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/delivery_earning_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/selected_my_earning"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selected_earning" />
+
+                <ImageView
+                    android:id="@+id/unselected_my_earning"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/unselected_earning" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/my_earning_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#434343"
+
+                android:textSize="@dimen/_10sdp"
+                android:text="My Earnings" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/farmer_listing_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/selected_my_listing"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selected_listing" />
+
+                <ImageView
+                    android:id="@+id/unselected_my_listing"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/unselected_listing" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/my_listing_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#434343"
+
+                android:textSize="@dimen/_10sdp"
+                android:text="My Listing" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/my_earning_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:visibility="gone"
+            android:background="@color/dark_green"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_tab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/delivery_settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/selected_settings"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selected_settings" />
+
+                <ImageView
+                    android:id="@+id/unselected_settings"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/unselected_settings" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/settings_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#434343"
+                android:text="Settings"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/farmer_mandi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/selected_mandi"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selected_mandi" />
+
+                <ImageView
+                    android:id="@+id/unselected_mandi"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/unselected_mandi" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mandi_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#434343"
+                android:text="Mandi"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/settings_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:visibility="gone"
+            android:background="@color/dark_green"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+</LinearLayout>

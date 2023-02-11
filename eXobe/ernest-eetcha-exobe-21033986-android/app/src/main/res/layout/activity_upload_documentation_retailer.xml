@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.uploadDocumentation_retailer">
+
+    <include
+        android:id="@+id/reg_header"
+        layout="@layout/header" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Certificate Of Incorporation (Business Registration Letter )"
+            android:textColor="@color/title_myprofile"
+            android:textSize="@dimen/Form_ETorTV" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:weightSum="2.5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:text="Front"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:text="Back"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:weightSum="2.5">
+
+            <RelativeLayout
+                android:id="@+id/rl_pic1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:id="@+id/upload_pic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pic2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:id="@+id/upload_pic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="VAT Registration Confirmation (If Applicable)"
+            android:textColor="@color/title_myprofile"
+            android:textSize="@dimen/Form_ETorTV" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:weightSum="2.5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:text="Front"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:text="Back"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:weightSum="2.5">
+
+            <RelativeLayout
+                android:id="@+id/rl_pic3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:id="@+id/upload_pic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pic4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:id="@+id/upload_pic4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Director Consent Form (To Be Completed)"
+            android:textColor="@color/title_myprofile"
+            android:textSize="@dimen/Form_ETorTV" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:weightSum="2.5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:text="Front"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:text="Back"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:weightSum="2.5">
+
+            <RelativeLayout
+                android:id="@+id/rl_pic5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:id="@+id/upload_pic5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pic6"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:id="@+id/upload_pic6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Director (s) ID Document"
+            android:textColor="@color/title_myprofile"
+            android:textSize="@dimen/Form_ETorTV" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:weightSum="2.5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:text="Front"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:text="Back"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:weightSum="2.5">
+
+            <RelativeLayout
+                android:id="@+id/rl_pic7"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:id="@+id/upload_pic7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_pic8"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:id="@+id/upload_pic8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Bank Confirmation Letter"
+            android:textColor="@color/title_myprofile"
+            android:textSize="@dimen/Form_ETorTV" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:weightSum="2.5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:text="Front"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:text="Back"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:weightSum="2.5">
+
+            <RelativeLayout
+                android:id="@+id/rl_pic9"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:id="@+id/upload_pic9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pic10"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/focus"
+                android:elevation="@dimen/_1sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:id="@+id/upload_pic10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/upload_document_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/login_button"
+            android:text="Submit"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textSize="@dimen/SUbTitle"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

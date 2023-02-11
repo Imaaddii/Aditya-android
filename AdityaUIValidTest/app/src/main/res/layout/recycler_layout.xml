@@ -1,0 +1,84 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginVertical="10dp"
+    app:cardBackgroundColor="#dcdcdc"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:id="@+id/itemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="6"
+                android:scaleType="fitXY"
+                android:src="@drawable/demo" />
+
+            <Button
+                android:id="@+id/txt_btn"
+                android:layout_width="95dp"
+                android:layout_height="17dp"
+                android:background="@drawable/button_recycler" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/itemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="Mobiloitte"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/itemCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemTitle"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="Crime"
+                android:textColor="#FFA500"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/itemLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemCategory"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:paddingStart="7dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="1dp"
+                android:text="Okhla phase 1"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/ic_location" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

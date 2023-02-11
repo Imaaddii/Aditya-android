@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FarmServ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="lets_sign_you_in">Let\'s sign you in</string>
+    <string name="welcome_back_you_are_been_missed">Welcome back, you\'re been missed!</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="get_otp">GET OTP</string>
+
+    <string name="deliverypartner">You can see your delivery partners details \nassigned in your location</string>
+    <string name="Select">SELECT &amp; CONTINUE</string>
+    <string name="error">Unfortunately no \nDelivery Partner available \nin your location</string>
+
+    <string-array name="chart_frequency">
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Annually</item>
+    </string-array>
+</resources>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AfterRequestedServiceDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/viewAddDealsImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/service_detail_page" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <ImageView
+                            android:id="@+id/backReqService"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/rectangle_background"
+                            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_200sdp"
+                    android:layout_marginBottom="-50dp"
+                    app:cardCornerRadius="@dimen/_30sdp"
+                    app:cardElevation="@dimen/_7sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="@string/meil"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/SUbTitle" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+
+                                >
+
+                                <TextView
+                                    android:id="@+id/houseCleaning"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="House Cleaning Service"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_8sdp" />
+
+                                <TextView
+                                    android:id="@+id/yearsBuisness"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:paddingVertical="@dimen/_3sdp"
+
+                                    android:text="7+ years in business"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_8sdp" />
+
+                                <TextView
+                                    android:id="@+id/newDelhi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="New Delhi,Delhi"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_8sdp" />
+
+
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:paddingVertical="3dp">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="2dp"
+                                        android:layout_marginTop="2dp"
+                                        android:layout_weight="0.5"
+                                        android:layout_gravity="end"
+                                        android:drawableEnd="@drawable/forward_grey_arrow"
+                                        android:drawablePadding="@dimen/_6sdp"
+                                        android:text="@string/_98_reviews" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <RatingBar
+                                            android:id="@+id/ratingBarr"
+                                            style="?android:attr/ratingBarStyleSmall"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_weight="0.5"
+                                            android:numStars="5"
+                                            android:paddingVertical="3dp"
+                                            android:progressTint="@color/rating_bar_golden"
+                                            android:rating="4" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="2dp"
+                                            android:text="4.6"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_11sdp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/dealID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:background="@drawable/deal_id_background"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:text="Description"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/matterText"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/description_text"
+                            android:textSize="@dimen/Form_ETorTV" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Got the Response will revert soon."
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/SUbTitle" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_200sdp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Status : Pending"
+                            android:textAllCaps="false"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/SUbTitle" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

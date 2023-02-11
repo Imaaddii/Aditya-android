@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Register_retailer">
+
+    <include
+        android:id="@+id/reg_header"
+        layout="@layout/header" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="111dp"
+                    android:layout_height="111dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/layer_3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/select_Image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/ic_baseline_camera_alt_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.619"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="First Name"
+
+                        android:textColor="@color/title_myprofile"
+                        android:textSize="@dimen/Form_ETorTV" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="#FF0808"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/firstname_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:background="@drawable/focus"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:elevation="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Enter first name"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:maxLength="25"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Form_ETorTV" />
+                <TextView
+                    android:id="@+id/first_nametv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Last Name"
+
+                            android:textColor="@color/title_myprofile"
+                            android:textSize="@dimen/Form_ETorTV" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#FF0808"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/LastName_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:background="@drawable/focus"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                        android:elevation="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_light"
+                        android:hint="Enter last name"
+                        android:inputType="textCapWords"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:maxLength="25"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/Form_ETorTV" />
+
+                    <TextView
+                        android:id="@+id/surname_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:textColor="@color/error"
+                        android:textSize="@dimen/_11sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Email address"
+
+                                android:textColor="@color/title_myprofile"
+                                android:textSize="@dimen/Form_ETorTV" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:text="*"
+                                android:textColor="#FF0808"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/email_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:background="@drawable/focus"
+                            android:elevation="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_light"
+                            android:hint="@string/Email"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/Form_ETorTV" />
+                    <TextView
+                        android:id="@+id/email_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:textColor="@color/error"
+                        android:textSize="@dimen/_11sdp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Phone Number (optional)"
+                            android:textColor="@color/title_myprofile"
+                            android:textSize="@dimen/Form_ETorTV" />
+
+                        <EditText
+                            android:id="@+id/phonenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:background="@drawable/focus"
+                            android:elevation="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_light"
+                            android:hint="Enter phone number"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/Form_ETorTV" />
+                    <TextView
+                        android:id="@+id/phone_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:textColor="@color/error"
+                        android:textSize="@dimen/_11sdp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Mobile Number"
+
+                                android:textColor="@color/title_myprofile"
+                                android:textSize="@dimen/Form_ETorTV" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:text="*"
+                                android:textColor="#FF0808"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/country"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/focus"
+                            android:gravity="center"
+                            android:elevation="@dimen/_5sdp"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/ccp_MyProfile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onCountryPickerClick"
+                                app:ccp_defaultPhoneCode="27"
+                                app:ccp_textSize="15dp"
+                                tools:ignore="MissingClass,OnClick" />
+
+
+                            <EditText
+                                android:id="@+id/mobile_editText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:backgroundTint="@color/gray"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/_8sdp"
+                                android:hint="Enter mobile number"
+                                android:fontFamily="@font/poppins_light"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:textSize="@dimen/Form_ETorTV" />
+
+
+
+                        </LinearLayout>
+                    <TextView
+                        android:id="@+id/mobile_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:textColor="@color/error"
+                        android:textSize="@dimen/_11sdp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Address line 1"
+                            android:textColor="@color/title_myprofile"
+                            android:textSize="@dimen/Form_ETorTV" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="*"
+                            android:textColor="#FF0808"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:background="@drawable/focus"
+                            android:elevation="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_light"
+                            android:hint="Enter address line 1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/Form_ETorTV" />
+                    <TextView
+                        android:id="@+id/address_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:textColor="@color/error"
+                        android:textSize="@dimen/_11sdp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Address Line 2"
+                            android:textColor="@color/title_myprofile"
+                            android:textSize="@dimen/Form_ETorTV" />
+
+                        <EditText
+                            android:id="@+id/address2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:background="@drawable/focus"
+                            android:elevation="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_light"
+                            android:hint="Enter address line 2"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/Form_ETorTV" />
+                    <TextView
+                        android:id="@+id/address2_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:textColor="@color/error"
+                        android:textSize="@dimen/_11sdp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="City/Suburb"
+                            android:textColor="@color/title_myprofile"
+                            android:textSize="@dimen/Form_ETorTV" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="*"
+                            android:textColor="#FF0808"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                        <EditText
+                            android:id="@+id/city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:background="@drawable/focus"
+                            android:elevation="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_light"
+                            android:hint="Enter city/suburb name"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/Form_ETorTV" />
+                    <TextView
+                        android:id="@+id/city_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:textColor="@color/error"
+                        android:textSize="@dimen/_11sdp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Zip Code"
+                            android:textColor="@color/title_myprofile"
+                            android:textSize="@dimen/Form_ETorTV" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="*"
+                            android:textColor="#FF0808"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/zipcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:background="@drawable/focus"
+                            android:elevation="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_light"
+                            android:hint="Enter zip code"
+                            android:padding="10dp"
+                            android:maxLength="10"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/Form_ETorTV" />
+                    <TextView
+                        android:id="@+id/zipcode_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:textColor="@color/error"
+                        android:textSize="@dimen/_11sdp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Country"
+                            android:textColor="@color/title_myprofile"
+                            android:textSize="@dimen/Form_ETorTV" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="*"
+                            android:textColor="#FF0808"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/country1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:background="@drawable/focus"
+                            android:elevation="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_light"
+                            android:hint="Enter country"
+                            android:padding="10dp"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/Form_ETorTV" />
+                    <TextView
+                        android:id="@+id/country_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:textColor="@color/error"
+                        android:textSize="@dimen/_11sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Password"
+                            android:textColor="@color/title_myprofile"
+                            android:textSize="@dimen/Form_ETorTV" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="#FF0808"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/password_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:background="@drawable/focus"
+                            android:elevation="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_light"
+                            android:hint="Enter password"
+                            android:padding="10dp"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/Form_ETorTV" />
+                    <TextView
+                        android:id="@+id/password_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:textColor="@color/error"
+                        android:textSize="@dimen/_11sdp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Confirm Password"
+                            android:textColor="@color/title_myprofile"
+                            android:textSize="@dimen/Form_ETorTV" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#FF0808"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                        <EditText
+                            android:id="@+id/confirmpassword_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:background="@drawable/focus"
+                            android:elevation="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_light"
+                            android:hint="Enter confirm password"
+                            android:padding="10dp"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/Form_ETorTV" />
+                    <TextView
+                        android:id="@+id/confirmpassword_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:textColor="@color/error"
+                        android:textSize="@dimen/_11sdp" />
+                    <LinearLayout
+                        android:id="@+id/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:orientation="horizontal"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/CheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I agree to"
+                            android:buttonTint="@color/red"
+                            android:textSize="14dp"/>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Terms"
+                            android:text=" Terms and Conditions"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <Button
+                            android:id="@+id/retailer_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/login_button"
+                            android:text="Register"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

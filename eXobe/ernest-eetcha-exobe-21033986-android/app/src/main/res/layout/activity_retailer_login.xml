@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Retailer_Login">
+
+<!--        <androidx.core.widget.NestedScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.5"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/exobe_login" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/Login"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Retailer ID*"
+                android:textColor="@color/ratailerLogin_text"
+                android:textSize="@dimen/SUbTitle"
+                android:textStyle="bold" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/retailerId_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/focus"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:elevation="5dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_12sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/shop" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/grey" />
+
+                <EditText
+                    android:id="@+id/retailerId_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/focus"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:inputType="number"
+                    android:textColor="@color/Input_Text_Color"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Enter your Retailer ID"
+                    android:textSize="@dimen/hintSize" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/retailerId_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/red"
+                android:textSize="@dimen/errorsize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="Password"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/ratailerLogin_text"
+                android:textSize="@dimen/SUbTitle"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:id="@+id/retailerPass_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:elevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/focus"
+                android:orientation="horizontal"
+                android:padding="@dimen/_12sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/lock" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/grey" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/retailerPass_EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/focus"
+                        android:fontFamily="@font/poppins_light"
+                        android:hint="Enter your password"
+                        android:inputType="textPassword"
+                        android:maxLength="30"
+                        android:singleLine="true"
+                        android:textColor="@color/Input_Text_Color"
+                        android:textSize="@dimen/hintSize" />
+
+                    <ImageView
+                        android:id="@+id/closs_eye"
+                        android:layout_width="15dp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_eye_slash_solid" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/retailerPass_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/red"
+                android:textSize="@dimen/errorsize"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:buttonTint="@color/red"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/Check"
+                        android:textColor="@color/ratailerLogin_text"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/Forgot_PassTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/FPass"
+                        android:textColor="@color/ratailerLogin_text"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/Login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="@dimen/_13sdp"
+                android:background="@drawable/login_button"
+                android:text="@string/Login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/SUbTitle"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/HaveAccount"
+                android:textColor="@color/ratailerLogin_text"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/Register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/register"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<!--        </androidx.core.widget.NestedScrollView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

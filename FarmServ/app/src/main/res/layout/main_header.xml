@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/DarkBlue">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/side_menu_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/side_menu_icon" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_left"
+            android:rotation="180"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/work_sans_regular"
+            android:gravity="center"
+            android:text="Home"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/centre_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/header_icon_small"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/search_icon" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_15sdp"
+
+            >
+
+            <ImageView
+                android:id="@+id/notification_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notification_icon" />
+
+            <LinearLayout
+                android:id="@+id/notification_point"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/notification_point"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_15sdp">
+
+
+            <ImageView
+                android:id="@+id/shopping_bag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopping_bag_icon" />
+
+            <RelativeLayout
+                android:id="@+id/shopping_bag_point"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:background="@drawable/notification_point">
+
+                <TextView
+                    android:id="@+id/shopping_bag_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="20"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/work_sans_regular"
+                    android:textSize="9dp"
+                    android:gravity="center"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

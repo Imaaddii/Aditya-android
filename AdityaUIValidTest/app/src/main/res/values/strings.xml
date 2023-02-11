@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Aditya UI Valid Test</string>
+    <string name="loginDetail">Please enter the detail below to continue.</string>
+    <string name="storm_forget"> <u>Forgot Password</u></string>
+    <string name="storm_login">Don\'t have an account?</string>
+    <string name="storm_signIn"> <u>Sign Up?</u></string>
+    <string name="term_condition"> I agree to only post truthful and relevant
+information that is helpful to others, I
+understand violating this will result in my
+account removal.</string>
+    <string name="i_agree_to_only_post_truthful_and_relevant_information_that_is_helpful_to_others_i_understand_violating_this_will_result_in_my_account_removal">I agree to only post truthful and relevant information that is helpful to others, I understand violating this will result in my account removal.</string>
+
+
+</resources>

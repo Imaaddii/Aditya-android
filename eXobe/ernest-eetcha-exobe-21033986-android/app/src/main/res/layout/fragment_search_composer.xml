@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.search_composer">
+
+
+    <EditText
+        android:id="@+id/UMsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/backgroundsearch"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:gravity="center_vertical"
+        android:hint="Search"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="40"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:textSize="15dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/RecyclerOfSearch"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="@dimen/_10sdp"
+       android:layout_marginRight="@dimen/_10sdp"
+       android:visibility="gone"
+       android:layout_marginTop="@dimen/_5sdp"/>
+
+
+
+
+</LinearLayout>

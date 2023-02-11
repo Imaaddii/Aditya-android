@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/strom_logo"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:paddingHorizontal="45dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Now"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#8a000000"
+        android:text="@string/loginDetail" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email ID/Phone number"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:maxLength="30"
+        android:padding="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/cardview"/>
+    <TextView
+        android:id="@+id/emailRequiredTv"
+        android:layout_width="wrap_content"
+        android:textSize="9sp"
+        android:padding="4dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="#F41010"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/errorTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:passwordToggleEnabled="true"
+        app:hintAnimationEnabled="false"
+        android:layout_marginTop="10dp"
+        app:hintEnabled="false"
+        app:helperTextTextAppearance="@style/TextLabel"
+        app:counterMaxLength="16"
+        app:counterEnabled="true"
+        app:helperTextTextColor="#FF0000"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/psdEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLength="16"
+            android:hint=" Enter Password"
+            android:inputType="textPassword"
+            android:background="@drawable/cardview"
+            android:padding="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    <CheckBox
+        android:id="@+id/checkboxClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:buttonTint="#CA532D"
+        android:padding="10dp"
+
+        android:text="Remember me"/>
+
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginStart="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textStyle="bold|italic"
+                android:textAlignment="textEnd"
+                android:text="@string/storm_forget"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/checkboxError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="#F41010"
+        />
+
+    <Button
+        android:id="@+id/clickBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/storm_login"
+        android:textColor="#404040" />
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/storm_signIn"
+        android:lineSpacingExtra="6sp"
+        android:textStyle="bold|italic"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        />
+</LinearLayout>
+
+
+
+
+</LinearLayout>

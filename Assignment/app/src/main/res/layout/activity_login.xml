@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bee_img"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/yellow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:layout_marginLeft="35dp"
+        android:textSize="12sp"
+        android:textColor="@color/yellow"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:elevation="6dp"
+        android:padding="15dp"
+        android:textSize="9sp"
+        android:paddingHorizontal="10dp"
+        android:hint="ENTER YOUR EMAIL/MOBILE NUMBER/USER NAME"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_box"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:textSize="12sp"
+        android:textColor="@color/yellow"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:elevation="6dp"
+        android:padding="15dp"
+        android:textSize="9sp"
+        android:paddingHorizontal="10dp"
+        android:hint="ENTER YOUR PASSWORD"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_box"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:letterSpacing="0.5"
+            android:textSize="13sp"
+            android:background="@drawable/button"
+            android:text="LOG IN"
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
